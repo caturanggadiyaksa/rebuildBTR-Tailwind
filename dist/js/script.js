@@ -47,14 +47,21 @@ function macthesPubg() {
   const pubgMobile = document.querySelector('#macthes-pubgmobile');
   const alMathces = document.querySelector('#all-matches');
   const mobileLegends = document.querySelector('#matches-mobilelegends');
+  const freeFire = document.querySelector('#matches-freefire');
+  const valoRant = document.querySelector('#matches-valorant');
 
 
+  freeFire.classList.remove('block');
+  freeFire.classList.add('hidden');
+  valoRant.classList.add('hidden');
+  valoRant.classList.remove('block');
   mobileLegends.classList.remove('block');
   mobileLegends.classList.add('hidden');
   alMathces.classList.add('hidden');
   alMathces.classList.remove('block');
   pubgMobile.classList.remove('hidden');
   pubgMobile.classList.add('block');
+
 }
 
 
@@ -62,14 +69,19 @@ function macthesPubg() {
 
 //matches Mobile legends
 function matchesML() {
-  const mobileLegends = document.querySelector('#matches-mobilelegends');
-  const allMatches = document.querySelector('#all-matches');
   const pubgMobile = document.querySelector('#macthes-pubgmobile');
+  const alMathces = document.querySelector('#all-matches');
+  const mobileLegends = document.querySelector('#matches-mobilelegends');
+  const freeFire = document.querySelector('#matches-freefire');
+  const valoRant = document.querySelector('#matches-valorant');
 
-
-  pubgMobile.classList.remove('block');
+  freeFire.classList.remove('block');
+  freeFire.classList.add('hidden');
+  valoRant.classList.add('hidden');
+  valoRant.classList.remove('block');
+  alMathces.classList.add('hidden');
+  alMathces.classList.remove('block');
   pubgMobile.classList.add('hidden');
-  allMatches.classList.add('hidden');
   mobileLegends.classList.remove('hidden');
   mobileLegends.classList.add('block');
 }
@@ -80,18 +92,21 @@ function matchesML() {
 //matches Free fire
 function matchesFreeFire() {
 
-  const freeFire = document.querySelector('#matches-freefire');
-  const mobileLegends = document.querySelector('#matches-mobilelegends');
-  const allMatches = document.querySelector('#all-matches');
   const pubgMobile = document.querySelector('#macthes-pubgmobile');
+  const alMathces = document.querySelector('#all-matches');
+  const mobileLegends = document.querySelector('#matches-mobilelegends');
+  const freeFire = document.querySelector('#matches-freefire');
+  const valoRant = document.querySelector('#matches-valorant');
 
-
-  freeFire.classList.remove('hidden');
-  pubgMobile.classList.remove('block');
+  
+  valoRant.classList.remove('block');
+  valoRant.classList.add('hidden');
+  alMathces.classList.add('hidden');
+  alMathces.classList.remove('block');
   pubgMobile.classList.add('hidden');
-  allMatches.classList.add('hidden');
-  mobileLegends.classList.remove('block');
   mobileLegends.classList.add('hidden');
+  freeFire.classList.remove('hidden');
+  freeFire.classList.add('block');
 }
 
 

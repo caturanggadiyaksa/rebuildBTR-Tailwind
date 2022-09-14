@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigetron | Profesional Esport</title>
     <link rel="stylesheet" href="dist/output.css">
+    <!-- <link rel="stylesheet" href="node_modules/animate.css/animate.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
 
@@ -29,10 +32,30 @@
                     <nav id="nav-menu" class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[300px] w-full right-4 top-full md:max-w-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none" >
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary  md:mx-4" href="#home">Division</a>
+                                <!-- <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Divisions<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button> -->
+
+                                <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary  md:mx-4">Division <svg class="ml-1 mt-1 pt-1 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+                                <!-- Dropdown menu -->
+                                <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                                    <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                                    </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary  md:mx-4" href="#about">Company</a>
+                                <a class="animate__animated animate__bounce animate__delay-2s animate__slow text-base text-dark py-2 mx-8 flex group-hover:text-primary  md:mx-4" href="#about">Company</a>
                             </li>
                             <li class="group">
                                 <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary  md:mx-4" href="#portfolio">Macthes</a>
@@ -132,7 +155,7 @@
                 <div class="max-w-xl mx-auto text-center mb-10 ">
                     <!-- <h1 class="uppercase font-extrabold text-3xl text-primary">Bigetron</h1>
                     <h4 class="font-semibold text-xl text-slate-200 pt-4">Programmed To Win</h4> -->
-                    <p class="font-bold text-2xl text-teal-500 uppercase pt-20">Divisions</p>
+                    <p class=" font-bold text-2xl text-teal-500 uppercase pt-20">Divisions</p>
                 </div>
             </div>
 
@@ -631,4 +654,8 @@
 
     <script src="dist/js/script.js"></script>
 </body>
+
+<script src="node_modules/flowbite/dist/flowbite.js">
+
+</script>
 </html>
