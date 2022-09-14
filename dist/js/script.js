@@ -75,6 +75,48 @@ function matchesML() {
 }
 
 
+
+
+//matches Free fire
+function matchesFreeFire() {
+
+  const freeFire = document.querySelector('#matches-freefire');
+  const mobileLegends = document.querySelector('#matches-mobilelegends');
+  const allMatches = document.querySelector('#all-matches');
+  const pubgMobile = document.querySelector('#macthes-pubgmobile');
+
+
+  freeFire.classList.remove('hidden');
+  pubgMobile.classList.remove('block');
+  pubgMobile.classList.add('hidden');
+  allMatches.classList.add('hidden');
+  mobileLegends.classList.remove('block');
+  mobileLegends.classList.add('hidden');
+}
+
+
+
+
+//matches Free fire
+function matchesValorant() {
+
+  const valoRant = document.querySelector('#matches-valorant');
+  const freeFire = document.querySelector('#matches-freefire');
+  const mobileLegends = document.querySelector('#matches-mobilelegends');
+  const allMatches = document.querySelector('#all-matches');
+  const pubgMobile = document.querySelector('#macthes-pubgmobile');
+
+
+  valoRant.classList.remove('hidden');
+  freeFire.classList.add('hidden');
+  pubgMobile.classList.remove('block');
+  pubgMobile.classList.add('hidden');
+  allMatches.classList.add('hidden');
+  mobileLegends.classList.remove('block');
+  mobileLegends.classList.add('hidden');
+}
+
+
 //slide show
 
 let slideIndex = 1;
