@@ -1266,6 +1266,10 @@ body {
     margin-right: 10rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
